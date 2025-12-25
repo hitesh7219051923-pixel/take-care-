@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Well Soon Sneha! 🎀</title>
+    <style>
+        @import url('fonts.googleapis.com');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff0f6; /* Sweet Pink Background */
+            font-family: 'Quicksand', sans-serif;
+            overflow: hidden;
+        }
+
+        /* Floating Candies Background */
+        .candy-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .candy {
+            position: absolute;
+            bottom: -100px;
+            font-size: 30px;
+            animation: moveUp 7s linear infinite;
+            opacity: 0.8;
+            user-select: none;
+        }
+
+        @keyframes moveUp {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+            20% { opacity: 1; }
+            80% { opacity: 1; }
+            100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; }
+        }
+
+        /* Main Card Styling */
+        .card {
+            background: white;
+            padding: 35px;
+            border-radius: 35px;
+            box-shadow: 0 20px 40px rgba(255, 105, 180, 0.2);
+            text-align: center;
+            z-index: 10;
+            border: 5px solid #ffb6c1;
+            max-width: 380px;
+            position: relative;
+            /* 6 seconds for extra slow zoom effect */
+            animation: pulse 6s infinite ease-in-out; 
+        }
+
+        /* Slow Zoom In/Out Animation */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); } /* Smooth and very slight zoom */
+            100% { transform: scale(1); }
+        }
+
+        .kitty-img {
+            width: 210px;
+            height: 210px;
+            object-fit: cover;
+            border-radius: 25px;
+            border: 4px solid #ff80ab;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #ff4081;
+            font-size: 28px;
+            margin: 0 0 10px 0;
+        }
+
+        p {
+            color: #444;
+            font-size: 19px;
+            line-height: 1.6;
+            margin: 8px 0;
+        }
+
+        .sneha-name {
+            color: #d81b60;
+            font-weight: bold;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating Chocolates & Candies -->
+    <div class="candy-container">
+        <div class="candy" style="left: 5%; animation-delay: 0s;">🍫</div>
+        <div class="candy" style="left: 15%; animation-delay: 2s;">🍬</div>
+        <div class="candy" style="left: 25%; animation-delay: 4s;">🍭</div>
+        <div class="candy" style="left: 35%; animation-delay: 1s;">🍫</div>
+        <div class="candy" style="left: 45%; animation-delay: 3s;">🍪</div>
+        <div class="candy" style="left: 55%; animation-delay: 5s;">🍬</div>
+        <div class="candy" style="left: 65%; animation-delay: 0.5s;">🍭</div>
+        <div class="candy" style="left: 75%; animation-delay: 2.5s;">🍫</div>
+        <div class="candy" style="left: 85%; animation-delay: 4.5s;">🍩</div>
+        <div class="candy" style="left: 95%; animation-delay: 1.5s;">🍬</div>
+        <div class="candy" style="left: 20%; animation-delay: 6s;">🧁</div>
+        <div class="candy" style="left: 50%; animation-delay: 7s;">🍫</div>
+        <div class="candy" style="left: 80%; animation-delay: 3.5s;">🍭</div>
+        <div class="candy" style="left: 10%; animation-delay: 5.5s;">🍬</div>
+    </div>
+
+    <div class="card">
+        <!-- Image name updated to kitty.jpg (you can change extension to .png if needed) -->
+        <img src="kitty.jpg" class="kitty-img" alt="Cute Kitty">
+        
+        <h1>Get Well Soon, <span class="sneha-name">Sneha!</span></h1>
+        
+        <p>Sending you lots of happiness and sweet vibes to make you feel better.</p>
+        
+        <p>Take rest and recover fast! ✨🌸</p>
+    </div>
+
+</body>
+</html>
